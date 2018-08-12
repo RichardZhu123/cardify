@@ -86,8 +86,9 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
+        } else if (id == R.id.nav_scan) {
+            Intent launchScanScreen = new Intent(this, ScanActivity.class);
+            startActivity(launchScanScreen);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
